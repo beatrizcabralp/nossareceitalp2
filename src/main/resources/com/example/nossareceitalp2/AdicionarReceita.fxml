@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1250.0" prefWidth="800.0" stylesheets="@../../../Style/main.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nossareceitalp2.AdicionarReceitaController">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0" style="-fx-background-color: FFEF73;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="titulo-nossa-receita" text="Nossa Receita" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#voltarParaMain" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="botoes-navbar" text="Main" textAlignment="CENTER" wrapText="true" />
+                  <Button mnemonicParsing="false" onAction="#irParaGerenciarReceitas" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="botoes-navbar" text="Gerenciar Receitas" textAlignment="CENTER" wrapText="true" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="botoes-navbar" text="Adicionar Receitas" textAlignment="CENTER" wrapText="true" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </padding>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

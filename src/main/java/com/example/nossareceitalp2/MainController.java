@@ -26,6 +26,8 @@ public class MainController {
     private ScrollPane scrollchurrasco;
 
 
+    //Carregar a Imagem do Bolo de cenoura (usei como teste)
+
 
     @FXML
     public void initialize() {
@@ -37,6 +39,8 @@ public class MainController {
 
         ImagemBoloDeCenoura.setImage(imagem);
     }
+
+    //Acionar o movimento dos botões de esquerda e direita em cada um dos carrossei
 
     @FXML
     private void moverdireitasobremesa() {
@@ -136,6 +140,31 @@ public class MainController {
         double posicaoAtual = scrollchurrasco.getHvalue();
 
         scrollchurrasco.setHvalue(posicaoAtual - 0.2);
+    }
+
+    //Carregar as outras telas da navabar ao clicar em um de seus botoes
+
+    @FXML
+    public void abrirAdicionarReceita(javafx.event.ActionEvent event) throws java.io.IOException {
+
+        javafx.fxml.FXMLLoader loader = new javafx.fxml.FXMLLoader(getClass().getResource("AdicionarReceita.fxml"));
+        javafx.scene.Parent root = loader.load();
+
+        javafx.stage.Stage stage = (javafx.stage.Stage)((javafx.scene.Node)event.getSource()).getScene().getWindow();
+
+        stage.setScene(new javafx.scene.Scene(root));
+        stage.show();
+    }
+
+    @FXML
+    public void abrirGerenciarReceitas(javafx.event.ActionEvent event) throws java.io.IOException {
+
+        javafx.fxml.FXMLLoader loader = new javafx.fxml.FXMLLoader(getClass().getResource("GerenciarReceitas.fxml"));
+        javafx.scene.Parent root = loader.load();
+
+        javafx.stage.Stage stage = (javafx.stage.Stage)((javafx.scene.Node)event.getSource()).getScene().getWindow();
+        stage.setScene(new javafx.scene.Scene(root));
+        stage.show();
     }
 
 

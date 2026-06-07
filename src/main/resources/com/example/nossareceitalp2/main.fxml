@@ -62,7 +62,7 @@
                                                    <children>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fx:id="ImagemBoloDeCenoura" fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fx:id="ImagemBoloDeCenoura" fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/bolodecenoura.jpg" />
                                                                </image>
@@ -72,7 +72,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/pudim.jpg" />
                                                                </image>
@@ -82,7 +82,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/brigadeiro.jpg" />
                                                                </image>
@@ -92,7 +92,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/churros.jpg" />
                                                                </image>
@@ -102,7 +102,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/tortadelimao.jpg" />
                                                                </image>
@@ -112,7 +112,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/petitgateau.jpg" />
                                                                </image>
@@ -148,7 +148,7 @@
                                                    <children>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/coxinha.jpg" />
                                                                </image>
@@ -158,7 +158,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/pastel.jpg" />
                                                                </image>
@@ -168,7 +168,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/empada.jpg" />
                                                                </image>
@@ -178,7 +178,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/esfirra.jpg" />
                                                                </image>
@@ -188,7 +188,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/paodequeijo.jpg" />
                                                                </image>
@@ -198,7 +198,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/kibe.jpg" />
                                                                </image>
@@ -231,7 +231,7 @@
                                                    <children>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/bolodeaveia.jpg" />
                                                                </image>
@@ -241,7 +241,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/queijodetofu.jpg" />
                                                                </image>
@@ -251,7 +251,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/iorgute.jpg" />
                                                                </image>
@@ -261,7 +261,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/chocolatequente.jpg" />
                                                                </image>
@@ -271,7 +271,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/iorgute.jpg" />
                                                                </image>
@@ -281,7 +281,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/milkshake.jpg" />
                                                                </image>
@@ -314,7 +314,7 @@
                                                    <children>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/bolognese.jpg" />
                                                                </image>
@@ -324,7 +324,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/carbonara.jpg" />
                                                                </image>
@@ -334,7 +334,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/caprese.jpg" />
                                                                </image>
@@ -344,7 +344,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/lasagna.jpg" />
                                                                </image>
@@ -354,7 +354,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/formaggio.jpg" />
                                                                </image>
@@ -364,7 +364,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/pesto.jpg" />
                                                                </image>
@@ -397,7 +397,7 @@
                                                    <children>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/picanha.jpg" />
                                                                </image>
@@ -407,7 +407,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/frango.jpg" />
                                                                </image>
@@ -417,7 +417,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/vinagrete.jpg" />
                                                                </image>
@@ -427,7 +427,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/paodealho.jpg" />
                                                                </image>
@@ -437,7 +437,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/queijocoalho.jpg" />
                                                                </image>
@@ -447,7 +447,7 @@
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" onMouseClicked="#abrirVisualizarReceita" pickOnBounds="true" preserveRatio="true">
                                                                <image>
                                                                   <Image url="@../../../imagens/farofa.jpg" />
                                                                </image>

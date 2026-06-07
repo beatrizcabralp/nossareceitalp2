@@ -4,10 +4,13 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="1250.0" prefWidth="800.0" stylesheets="@../../../Style/main.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nossareceitalp2.GerenciarReceitasController">
@@ -39,7 +42,431 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <Label text="Gerenciar Receitas" />
+                        <VBox alignment="CENTER">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="800.0" spacing="10.0">
+                                 <children>
+                                    <Label styleClass="titulo-categoria-receita" text="Sobremesas">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0" styleClass="category-title">
+                                       <children>
+                                          <Button fx:id="botaoesquerdasobremesa" mnemonicParsing="false" onAction="#moveresquerdasobremesa" styleClass="botoes-carrossel" text="&lt;" />
+                                          <ScrollPane fx:id="scrollsobremesas" fitToHeight="true" hbarPolicy="NEVER" minHeight="150.0" prefWidth="700.0" vbarPolicy="NEVER">
+                                             <content>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0" styleClass="titulo-receita">
+                                                   <children>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fx:id="ImagemBoloDeCenoura" fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/bolodecenoura.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Gerenciar Receitas" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/pudim.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Pudim" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/brigadeiro.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Brigadeiro" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/churros.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Churros" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/tortadelimao.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Torta de Limão" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/petitgateau.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Petit Gateau" />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </content>
+                                          </ScrollPane>
+                                          <Button fx:id="botaodireirasobremesa" mnemonicParsing="false" onAction="#moverdireitasobremesa" styleClass="botoes-carrossel" text="&gt;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="800.0" spacing="10.0" styleClass="titulo-receita">
+                                 <children>
+                                    <Label styleClass="titulo-categoria-receita" text="Salgados">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <Button fx:id="botaoesquerdasalgado" mnemonicParsing="false" onAction="#moveresquerdasalgado" styleClass="botoes-carrossel" text="&lt;" />
+                                          <ScrollPane fx:id="scrollsalgado" fitToHeight="true" hbarPolicy="NEVER" minHeight="150.0" prefWidth="700.0" vbarPolicy="NEVER">
+                                             <content>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/coxinha.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Coxinha" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/pastel.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Pastel" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/empada.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Empada" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/esfirra.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Esfirra" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/paodequeijo.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Pão de Queijo" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/kibe.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Kibe" />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </content>
+                                          </ScrollPane>
+                                          <Button fx:id="botaodireitasalgado" mnemonicParsing="false" onAction="#moverdireitasalgado" styleClass="botoes-carrossel" text="&gt;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="800.0" spacing="10.0" styleClass="titulo-receita">
+                                 <children>
+                                    <Label styleClass="titulo-categoria-receita" text="Vegano">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <Button fx:id="botaoesquerdavegan" mnemonicParsing="false" onAction="#moveresquerdavegan" styleClass="botoes-carrossel" text="&lt;" />
+                                          <ScrollPane fx:id="scrollvegan" fitToHeight="true" hbarPolicy="NEVER" minHeight="150.0" prefWidth="700.0" vbarPolicy="NEVER">
+                                             <content>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/bolodeaveia.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Bolo de Aveia" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/queijodetofu.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Queijo de Tofu" textAlignment="CENTER" wrapText="true" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/iorgute.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Leite de Castanha" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/chocolatequente.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Chocolate Quente" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/iorgute.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Iorgute Vegan" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/milkshake.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Milkshake vegan" />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </content>
+                                          </ScrollPane>
+                                          <Button fx:id="botaodireitavegan" mnemonicParsing="false" onAction="#moverdireitavegan" styleClass="botoes-carrossel" text="&gt;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="800.0" spacing="10.0" styleClass="titulo-receita">
+                                 <children>
+                                    <Label styleClass="titulo-categoria-receita" text="Massa">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <Button fx:id="botaoesquerdamassa" mnemonicParsing="false" onAction="#moveresquerdamassa" styleClass="botoes-carrossel" text="&lt;" />
+                                          <ScrollPane fx:id="scrollmassa" fitToHeight="true" hbarPolicy="NEVER" minHeight="150.0" prefWidth="700.0" vbarPolicy="NEVER">
+                                             <content>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/bolognese.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Bolognese" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/carbonara.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Carbonara" textAlignment="CENTER" wrapText="true" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/caprese.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Caprese" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/lasagna.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Lasagna" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/formaggio.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Formaggio" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/pesto.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Pesto" />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </content>
+                                          </ScrollPane>
+                                          <Button fx:id="botaodireitamassa" mnemonicParsing="false" onAction="#moverdireitamassa" styleClass="botoes-carrossel" text="&gt;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="800.0" spacing="10.0" styleClass="titulo-receita">
+                                 <children>
+                                    <Label styleClass="titulo-categoria-receita" text="Churrasco">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <Button fx:id="botaoesquerdachurrasco" mnemonicParsing="false" onAction="#moveresquerdachurrasco" styleClass="botoes-carrossel" text="&lt;" />
+                                          <ScrollPane fx:id="scrollchurrasco" fitToHeight="true" hbarPolicy="NEVER" minHeight="150.0" prefWidth="700.0" vbarPolicy="NEVER">
+                                             <content>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/picanha.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Carne" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/frango.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Frango" textAlignment="CENTER" wrapText="true" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/vinagrete.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Vinagrete" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/paodealho.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Pão de Alho" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/queijocoalho.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Queijo Coalho" />
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                                         <children>
+                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../imagens/farofa.jpg" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label text="Farofa" />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </content>
+                                          </ScrollPane>
+                                          <Button fx:id="botaodireitachurrasco" mnemonicParsing="false" onAction="#moverdireitachurrasco" styleClass="botoes-carrossel" text="&gt;" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
                      </children>
                   </AnchorPane>
               </content>

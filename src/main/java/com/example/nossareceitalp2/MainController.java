@@ -167,6 +167,18 @@ public class MainController {
         stage.show();
     }
 
+    @FXML
+    public void abrirVisualizarReceita(javafx.scene.input.MouseEvent event) throws java.io.IOException {
+        // Carrega o arquivo FXML da tela de visualizar receita
+        javafx.fxml.FXMLLoader loader = new javafx.fxml.FXMLLoader(getClass().getResource("VisualizarReceita.fxml"));
+        javafx.scene.Parent root = loader.load();
+
+        // Pega a janela atual a partir do clique do mouse e muda a cena
+        javafx.stage.Stage stage = (javafx.stage.Stage)((javafx.scene.Node)event.getSource()).getScene().getWindow();
+        stage.setScene(new javafx.scene.Scene(root));
+        stage.show();
+    }
+
 
 
 

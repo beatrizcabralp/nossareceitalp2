@@ -24,7 +24,7 @@
                         <Font size="14.0" />
                      </font></Label>
                   <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-                  <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="botoes-navbar" text="Visualizar Receitas" textAlignment="CENTER" wrapText="true" />
+                  <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="botoes-navbar" text="Main" textAlignment="CENTER" wrapText="true" />
                   <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="botoes-navbar" text="Gerenciar Receitas" textAlignment="CENTER" wrapText="true" />
                   <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="botoes-navbar" text="Adicionar Receitas" textAlignment="CENTER" wrapText="true" />
                </children>

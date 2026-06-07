@@ -17,6 +17,17 @@ public class MainController {
     private ScrollPane scrollsalgado;
 
     @FXML
+    private ScrollPane scrollvegan;
+
+    @FXML
+    private ScrollPane scrollmassa;
+
+    @FXML
+    private ScrollPane scrollchurrasco;
+
+
+
+    @FXML
     public void initialize() {
 
         Image imagem =
@@ -66,6 +77,68 @@ public class MainController {
 
         scrollsalgado.setHvalue(posicaoAtual - 0.2);
     }
+
+    @FXML
+    private void moverdireitavegan() {
+
+        System.out.println("Clicou direita");
+
+        double posicaoAtual = scrollvegan.getHvalue();
+
+        scrollvegan.setHvalue(posicaoAtual + 0.2);
+    }
+
+    @FXML
+    private void moveresquerdavegan() {
+
+        System.out.println("Clicou esquerda");
+
+        double posicaoAtual = scrollvegan.getHvalue();
+
+        scrollvegan.setHvalue(posicaoAtual - 0.2);
+    }
+
+    @FXML
+    private void moverdireitamassa() {
+
+        System.out.println("Clicou direita");
+
+        double posicaoAtual = scrollmassa.getHvalue();
+
+        scrollmassa.setHvalue(posicaoAtual + 0.2);
+    }
+
+    @FXML
+    private void moveresquerdamassa() {
+
+        System.out.println("Clicou esquerda");
+
+        double posicaoAtual = scrollmassa.getHvalue();
+
+        scrollmassa.setHvalue(posicaoAtual - 0.2);
+    }
+
+    @FXML
+    private void moverdireitachurrasco() {
+
+        System.out.println("Clicou direita");
+
+        double posicaoAtual = scrollchurrasco.getHvalue();
+
+        scrollchurrasco.setHvalue(posicaoAtual + 0.2);
+    }
+
+    @FXML
+    private void moveresquerdachurrasco() {
+
+        System.out.println("Clicou esquerda");
+
+        double posicaoAtual = scrollchurrasco.getHvalue();
+
+        scrollchurrasco.setHvalue(posicaoAtual - 0.2);
+    }
+
+
 
 
 }

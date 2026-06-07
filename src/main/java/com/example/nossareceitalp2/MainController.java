@@ -1,6 +1,7 @@
 package com.example.nossareceitalp2;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -10,11 +11,13 @@ public class MainController {
     private ImageView ImagemBoloDeCenoura;
 
     @FXML
-    public void initialize() {
+    private ScrollPane scrollsobremesas;
 
-        System.out.println(
-                getClass().getResource("/imagens/bolodecenoura.jpg")
-        );
+    @FXML
+    private ScrollPane scrollsalgado;
+
+    @FXML
+    public void initialize() {
 
         Image imagem =
                 new Image(
@@ -23,4 +26,46 @@ public class MainController {
 
         ImagemBoloDeCenoura.setImage(imagem);
     }
+
+    @FXML
+    private void moverdireitasobremesa() {
+
+        System.out.println("Clicou direita");
+
+        double posicaoAtual = scrollsobremesas.getHvalue();
+
+        scrollsobremesas.setHvalue(posicaoAtual + 0.2);
+    }
+
+    @FXML
+    private void moveresquerdasobremesa() {
+
+        System.out.println("Clicou esquerda");
+
+        double posicaoAtual = scrollsobremesas.getHvalue();
+
+        scrollsobremesas.setHvalue(posicaoAtual - 0.2);
+    }
+
+    @FXML
+    private void moverdireitasalgado() {
+
+        System.out.println("Clicou direita");
+
+        double posicaoAtual = scrollsalgado.getHvalue();
+
+        scrollsalgado.setHvalue(posicaoAtual + 0.2);
+    }
+
+    @FXML
+    private void moveresquerdasalgado() {
+
+        System.out.println("Clicou esquerda");
+
+        double posicaoAtual = scrollsalgado.getHvalue();
+
+        scrollsalgado.setHvalue(posicaoAtual - 0.2);
+    }
+
+
 }

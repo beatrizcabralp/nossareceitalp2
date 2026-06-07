@@ -1,7 +1,28 @@
 .root {
-    -fx-background-color: green;
+    -fx-background-color: #F5F5F5;
 }
 
-.label {
-    -fx-text-fill: red;
+.titulo-nossa-receita{
+ -fx-font-size: 24px;
+ -fx-font-weight: bold;
+ -fx-wrap-text: true;
+}
+
+.titulo-categoria-receita {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.titulo-receita {
+    -fx-font-size: 14px;
+}
+
+.botoes-navbar {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+}
+
+.botoes-carrossel{
+-fx-background-color: white;
+-fx-background-radius: 10;
 }

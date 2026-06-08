@@ -3,10 +3,13 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="1250.0" prefWidth="800.0" stylesheets="@../../../Style/main.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nossareceitalp2.AdicionarReceitaController">
@@ -33,6 +36,42 @@
                </padding>
             </HBox>
          </top>
+         <center>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="800.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="900.0" prefWidth="750.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="700.0" spacing="80.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="220.0">
+                                       <children>
+                                          <Label text="Título da Receita" wrapText="true" />
+                                          <TextField fx:id="campoTitulo" prefWidth="100.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="220.0">
+                                       <children>
+                                          <Label text="Carregar Foto do Perfil" wrapText="true" />
+                                          <Button mnemonicParsing="false" text="Selecionar Arquivo" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="220.0">
+                                       <children>
+                                          <Label text="Carregar Capa da Receita" wrapText="true" />
+                                          <Button mnemonicParsing="false" text="Selecionar Arquivo" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </center>
       </BorderPane>
    </children>
 </AnchorPane>

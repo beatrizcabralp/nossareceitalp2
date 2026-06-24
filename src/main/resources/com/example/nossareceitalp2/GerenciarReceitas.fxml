@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -60,11 +61,16 @@
                                                    <children>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fx:id="ImagemBoloDeCenoura" fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/bolodecenoura.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fx:id="ImagemBoloDeCenoura" fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/bolodecenoura.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Gerenciar Receitas" />
                                                          </children>
                                                       </VBox>

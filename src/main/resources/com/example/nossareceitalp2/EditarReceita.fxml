@@ -148,8 +148,8 @@
                               </HBox>
                               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                                  <children>
-                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="botao-editar" stylesheets="@../../../Style/EditarReceita.css" text="Editar Receita" textFill="#19381c" />
-                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="botao-deletar" stylesheets="@../../../Style/EditarReceita.css" text="Apagar Receita" textFill="#19381c">
+                                    <Button mnemonicParsing="false" onAction="#abrirModalEditarReceita" prefHeight="30.0" prefWidth="100.0" styleClass="botao-editar" stylesheets="@../../../Style/EditarReceita.css" text="Editar Receita" textFill="#19381c" />
+                                    <Button mnemonicParsing="false" onAction="#abrirExcluirReceitaAviso" prefHeight="30.0" prefWidth="100.0" styleClass="botao-deletar" stylesheets="@../../../Style/EditarReceita.css" text="Apagar Receita" textFill="#19381c">
                                        <HBox.margin>
                                           <Insets />
                                        </HBox.margin>

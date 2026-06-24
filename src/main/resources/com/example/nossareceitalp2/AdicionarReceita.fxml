@@ -148,7 +148,7 @@
                               </HBox>
                               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                                  <children>
-                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="botao-salvar" stylesheets="@../../../Style/adicionarReceita.css" text="Salvar Receita" textFill="#19381c" />
+                                    <Button mnemonicParsing="false" onAction="#abrirModalAdicionarReceita" prefHeight="30.0" prefWidth="100.0" styleClass="botao-salvar" stylesheets="@../../../Style/adicionarReceita.css" text="Salvar Receita" textFill="#19381c" />
                                  </children>
                               </HBox>
                            </children>

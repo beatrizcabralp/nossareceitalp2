@@ -46,8 +46,8 @@
                               </Label>
                               <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
                                  <children>
-                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="botao-deletar" stylesheets="@../../../Style/EditarReceita.css" text="Excluir Receita" textFill="#19381c" />
-                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="botao-cancelar" stylesheets="@../../../Style/EditarReceita.css" text="Cancelar" textFill="#19381c" />
+                                    <Button mnemonicParsing="false" onAction="#abrirModalExcluirReceita" prefHeight="30.0" prefWidth="100.0" styleClass="botao-deletar" stylesheets="@../../../Style/EditarReceita.css" text="Excluir Receita" textFill="#19381c" />
+                                    <Button mnemonicParsing="false" onAction="#cancelarAviso" prefHeight="30.0" prefWidth="100.0" styleClass="botao-cancelar" stylesheets="@../../../Style/EditarReceita.css" text="Cancelar" textFill="#19381c" />
                                  </children>
                                  <opaqueInsets>
                                     <Insets />

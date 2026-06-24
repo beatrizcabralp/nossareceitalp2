@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -10,7 +9,6 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nossareceitalp2.ModalEditarReceitaController">
    <children>
@@ -24,11 +22,6 @@
                      </font>
                   </Label>
                   <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-                  <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" styleClass="botao-fechar-tela" stylesheets="@../../../Style/EditarReceita.css" text="X" textFill="#19381c">
-                     <HBox.margin>
-                        <Insets bottom="30.0" />
-                     </HBox.margin>
-                  </Button>
                </children>
                <opaqueInsets>
                   <Insets />

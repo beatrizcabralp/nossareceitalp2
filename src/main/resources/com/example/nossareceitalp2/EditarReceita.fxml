@@ -27,11 +27,6 @@
                      </font>
                   </Label>
                   <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-                  <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" styleClass="botao-fechar-tela" stylesheets="@../../../Style/EditarReceita.css" text="X" textFill="#19381c">
-                     <HBox.margin>
-                        <Insets bottom="30.0" />
-                     </HBox.margin>
-                  </Button>
                </children>
                <opaqueInsets>
                   <Insets />

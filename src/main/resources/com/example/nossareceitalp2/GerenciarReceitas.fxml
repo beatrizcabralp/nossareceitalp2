@@ -68,7 +68,7 @@
                                                                         <Image url="@../../../imagens/bolodecenoura.jpg" />
                                                                      </image>
                                                                   </ImageView>
-                                                                  <Button mnemonicParsing="false" text="🖉" />
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
                                                                </children>
                                                             </StackPane>
                                                             <Label text="Gerenciar Receitas" />

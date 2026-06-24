@@ -13,3 +13,8 @@
    -fx-background-radius: 10;
 }
 
+.botao-cancelar{
+   -fx-background-color: #D8D6D6;
+   -fx-background-radius: 10;
+}
+

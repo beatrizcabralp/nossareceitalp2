@@ -10,10 +10,26 @@ import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 import java.io.IOException;
 
+//Back-end
+
+import com.example.nossareceitalp2.model.Receita;
+import com.example.nossareceitalp2.service.ReceitaService;
+
+import java.util.List;
+
 public class GerenciarReceitasController {
 
-    // --- ATRIBUTOS (IDs dos ScrollPanes da tela de Gerenciar) ---
-    // Certifique-se de que no fx:id de cada ScrollPane no Scene Builder esteja exatamente assim:
+    //Back-end
+
+    private final ReceitaService receitaService =
+            ReceitaService.getInstance();
+
+    private List<Receita> receitas;
+
+    // --- ATRIBUTOS (IDs dos ScrollPanes da tela de Gerenciar)
+
+    //Front-end
+
     @FXML
     private ScrollPane scrollsobremesas;
 
@@ -28,7 +44,6 @@ public class GerenciarReceitasController {
 
     @FXML
     private ScrollPane scrollchurrasco;
-
 
     // --- NAVEGAÇÃO DA NAVBAR ---
 
@@ -48,10 +63,17 @@ public class GerenciarReceitasController {
         stage.show();
     }
 
+    // --- CARREGAMENTO DAS RECEITAS ---
+
+    @FXML
+    public void initialize() {
+        receitas = receitaService.listarReceitas();
+    }
 
     // --- MOVIMENTAÇÃO REAL DOS CARROSSÉIS ---
 
     // 1. SOBREMESAS
+
     @FXML
     private void moverdireitasobremesa() {
         double posicaoAtual = scrollsobremesas.getHvalue();
@@ -65,6 +87,7 @@ public class GerenciarReceitasController {
     }
 
     // 2. SALGADOS
+
     @FXML
     private void moverdireitasalgado() {
         double posicaoAtual = scrollsalgado.getHvalue();
@@ -78,6 +101,7 @@ public class GerenciarReceitasController {
     }
 
     // 3. VEGANO
+
     @FXML
     private void moverdireitavegan() {
         double posicaoAtual = scrollvegan.getHvalue();
@@ -91,6 +115,7 @@ public class GerenciarReceitasController {
     }
 
     // 4. MASSAS
+
     @FXML
     private void moverdireitamassa() {
         double posicaoAtual = scrollmassa.getHvalue();
@@ -104,6 +129,7 @@ public class GerenciarReceitasController {
     }
 
     // 5. CHURRASCO
+
     @FXML
     private void moverdireitachurrasco() {
         double posicaoAtual = scrollchurrasco.getHvalue();

@@ -10,12 +10,13 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1250.0" prefWidth="800.0" stylesheets="@../../../Style/main.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nossareceitalp2.GerenciarReceitasController">
+<AnchorPane prefHeight="1500.0" prefWidth="800.0" stylesheets="@../../../Style/main.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nossareceitalp2.GerenciarReceitasController">
    <children>
-      <BorderPane layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="1500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0" style="-fx-background-color: FFEF73;" BorderPane.alignment="CENTER">
                <children>
@@ -38,9 +39,9 @@
             </HBox>
          </top>
          <center>
-            <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1250.0" prefWidth="200.0">
                      <children>
                         <VBox alignment="CENTER">
                            <children>
@@ -60,61 +61,91 @@
                                                    <children>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fx:id="ImagemBoloDeCenoura" fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/bolodecenoura.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fx:id="ImagemBoloDeCenoura" fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/bolodecenoura.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Gerenciar Receitas" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/pudim.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/pudim.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Pudim" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/brigadeiro.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/brigadeiro.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Brigadeiro" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/churros.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/churros.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Churros" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/tortadelimao.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/tortadelimao.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Torta de Limão" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/petitgateau.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/petitgateau.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Petit Gateau" />
                                                          </children>
                                                       </VBox>
@@ -146,61 +177,91 @@
                                                    <children>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/coxinha.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/coxinha.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Coxinha" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/pastel.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/pastel.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Pastel" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/empada.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/empada.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Empada" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/esfirra.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/esfirra.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Esfirra" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/paodequeijo.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/paodequeijo.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Pão de Queijo" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/kibe.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/kibe.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Kibe" />
                                                          </children>
                                                       </VBox>
@@ -229,61 +290,91 @@
                                                    <children>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/bolodeaveia.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/bolodeaveia.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Bolo de Aveia" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/queijodetofu.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/queijodetofu.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Queijo de Tofu" textAlignment="CENTER" wrapText="true" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/iorgute.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/iorgute.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Leite de Castanha" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/chocolatequente.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/chocolatequente.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Chocolate Quente" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/iorgute.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/iorgute.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Iorgute Vegan" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/milkshake.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/milkshake.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Milkshake vegan" />
                                                          </children>
                                                       </VBox>
@@ -312,61 +403,90 @@
                                                    <children>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/bolognese.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/bolognese.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Bolognese" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/carbonara.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/carbonara.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Carbonara" textAlignment="CENTER" wrapText="true" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/caprese.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/caprese.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Caprese" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/lasagna.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/lasagna.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Lasagna" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/formaggio.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/formaggio.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Formaggio" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/pesto.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/pesto.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Pesto" />
                                                          </children>
                                                       </VBox>
@@ -395,61 +515,91 @@
                                                    <children>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/picanha.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/picanha.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Carne" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/frango.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/frango.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Frango" textAlignment="CENTER" wrapText="true" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/vinagrete.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/vinagrete.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Vinagrete" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/paodealho.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/paodealho.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Pão de Alho" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/queijocoalho.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/queijocoalho.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Queijo Coalho" />
                                                          </children>
                                                       </VBox>
                                                       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                                                          <children>
-                                                            <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../../../imagens/farofa.jpg" />
-                                                               </image>
-                                                            </ImageView>
+                                                            <StackPane alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <ImageView fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../imagens/farofa.jpg" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Button mnemonicParsing="false" onAction="#abrirEditarReceita" text="🖉" />
+                                                               </children>
+                                                            </StackPane>
                                                             <Label text="Farofa" />
                                                          </children>
                                                       </VBox>

@@ -15,21 +15,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1250.0" prefWidth="800.0" stylesheets="@../../../Style/main.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nossareceitalp2.AdicionarReceitaController">
+<AnchorPane prefHeight="675.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nossareceitalp2.EditarReceitaController">
    <children>
-      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <BorderPane layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0" style="-fx-background-color: FFEF73;" BorderPane.alignment="CENTER">
                <children>
-                  <Label styleClass="titulo-nossa-receita" text="Nossa Receita" textAlignment="CENTER" wrapText="true">
+                  <Label styleClass="titulo-nossa-receita" text="Editar Receita" textAlignment="CENTER" wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
                   <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-                  <Button mnemonicParsing="false" onAction="#voltarParaMain" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="botoes-navbar" text="Main" textAlignment="CENTER" wrapText="true" />
-                  <Button mnemonicParsing="false" onAction="#irParaGerenciarReceitas" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="botoes-navbar" text="Gerenciar Receitas" textAlignment="CENTER" wrapText="true" />
-                  <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="botoes-navbar" text="Adicionar Receitas" textAlignment="CENTER" wrapText="true" />
                </children>
                <opaqueInsets>
                   <Insets />
@@ -41,8 +38,8 @@
          </top>
          <center>
             <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="800.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="800.0">
                      <children>
                         <VBox alignment="TOP_CENTER" prefHeight="900.0" prefWidth="750.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
@@ -53,7 +50,8 @@
                                           <Label text="Título da Receita" wrapText="true">
                                              <padding>
                                                 <Insets bottom="5.0" />
-                                             </padding></Label>
+                                             </padding>
+                                          </Label>
                                           <TextField fx:id="campoTitulo" prefWidth="100.0" />
                                        </children>
                                     </VBox>
@@ -62,7 +60,8 @@
                                           <Label text="Carregar foto do perfil" wrapText="true">
                                              <padding>
                                                 <Insets bottom="5.0" />
-                                             </padding></Label>
+                                             </padding>
+                                          </Label>
                                           <Button mnemonicParsing="false" text="Selecionar Arquivo" />
                                        </children>
                                     </VBox>
@@ -71,7 +70,8 @@
                                           <Label text="Carregar capa da receita" wrapText="true">
                                              <padding>
                                                 <Insets bottom="5.0" />
-                                             </padding></Label>
+                                             </padding>
+                                          </Label>
                                           <Button mnemonicParsing="false" text="Selecionar Arquivo" />
                                        </children>
                                     </VBox>
@@ -146,16 +146,24 @@
                                     </VBox>
                                  </children>
                               </HBox>
-                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                                  <children>
-                                    <Button mnemonicParsing="false" onAction="#abrirModalAdicionarReceita" prefHeight="30.0" prefWidth="100.0" styleClass="botao-salvar" stylesheets="@../../../Style/adicionarReceita.css" text="Salvar Receita" textFill="#19381c" />
+                                    <Button mnemonicParsing="false" onAction="#abrirModalEditarReceita" prefHeight="30.0" prefWidth="100.0" styleClass="botao-editar" stylesheets="@../../../Style/EditarReceita.css" text="Editar Receita" textFill="#19381c" />
+                                    <Button mnemonicParsing="false" onAction="#abrirExcluirReceitaAviso" prefHeight="30.0" prefWidth="100.0" styleClass="botao-deletar" stylesheets="@../../../Style/EditarReceita.css" text="Apagar Receita" textFill="#19381c">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Button>
                                  </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
                               </HBox>
                            </children>
                         </VBox>
                      </children>
                   </AnchorPane>
-              </content>
+               </content>
             </ScrollPane>
          </center>
       </BorderPane>

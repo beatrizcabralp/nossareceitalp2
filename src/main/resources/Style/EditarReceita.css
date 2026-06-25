@@ -1,0 +1,20 @@
+.botao-fechar-tela{
+   -fx-background-color: white;
+   -fx-background-radius: 10;
+}
+
+.botao-editar{
+   -fx-background-color: #5DFF75;
+   -fx-background-radius: 10;
+}
+
+.botao-deletar{
+   -fx-background-color: red;
+   -fx-background-radius: 10;
+}
+
+.botao-cancelar{
+   -fx-background-color: #D8D6D6;
+   -fx-background-radius: 10;
+}
+

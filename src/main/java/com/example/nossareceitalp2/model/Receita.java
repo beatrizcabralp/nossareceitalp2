@@ -1,5 +1,7 @@
 package com.example.nossareceitalp2.model;
 
+//Receita
+
 public class Receita {
 
     private String titulo;

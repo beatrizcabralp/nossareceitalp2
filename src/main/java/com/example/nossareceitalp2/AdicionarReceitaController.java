@@ -8,6 +8,12 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.ComboBox;
+import javafx.scene.Node;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import java.io.IOException;
 
 public class AdicionarReceitaController {
 
@@ -55,6 +61,27 @@ public class AdicionarReceitaController {
         stage.show();
     }
 
+    @FXML
+    public void abrirModalAdicionarReceita(ActionEvent event) throws IOException {
+
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("ModalAdicionarReceita.fxml")
+        );
+
+        Parent root = loader.load();
+
+        Stage stage = new Stage();
+        stage.setTitle("Adicionar Receita");
+        stage.setScene(new Scene(root));
+
+        // --- ESSA LINHA É O SEGREDO ---
+        // Vincula a tela atual como "dona" do modal que vai abrir
+        Stage windowParent = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.initOwner(windowParent);
+
+        stage.show();
+    }
+
     //Back-end
 
     @FXML
@@ -71,4 +98,5 @@ public class AdicionarReceitaController {
 
         receitaService.adicionarReceita(receita);
     }
+}
 }

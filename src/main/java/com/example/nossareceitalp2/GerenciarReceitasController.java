@@ -141,4 +141,21 @@ public class GerenciarReceitasController {
         double posicaoAtual = scrollchurrasco.getHvalue();
         scrollchurrasco.setHvalue(posicaoAtual - 0.2);
     }
+
+    @FXML
+    private void abrirEditarReceita(ActionEvent event) throws IOException {
+
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("EditarReceita.fxml")
+        );
+
+        Parent root = loader.load();
+
+        Stage stage = new Stage();
+
+        stage.setTitle("Editar Receita");
+        stage.setScene(new Scene(root));
+
+        stage.show();
+    }
 }

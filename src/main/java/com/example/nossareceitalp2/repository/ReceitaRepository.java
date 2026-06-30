@@ -27,4 +27,35 @@ public class ReceitaRepository {
     public List<Receita> listar() {
         return receitas;
     }
+
+    public Receita buscarPorIndice(int indice) {
+
+        if (indice < 0 || indice >= receitas.size()) {
+            return null;
+        }
+
+        return receitas.get(indice);
+
+    }
+
+    public void atualizar(int indice, Receita novaReceita) {
+
+        if (indice < 0 || indice >= receitas.size()) {
+            return;
+        }
+
+        receitas.set(indice, novaReceita);
+
+    }
+
+    public void remover(int indice) {
+
+        if (indice < 0 || indice >= receitas.size()) {
+            return;
+        }
+
+        receitas.remove(indice);
+
+    }
+
 }

@@ -1,8 +1,9 @@
 package com.example.nossareceitalp2;
 
-import com.example.nossareceitalp2.model.Receita;
 import com.example.nossareceitalp2.model.TipoComida;
 import com.example.nossareceitalp2.service.ReceitaService;
+
+import com.example.nossareceitalp2.model.Receita;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
@@ -14,6 +15,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
+
+import javafx.event.ActionEvent;
 
 public class AdicionarReceitaController {
 
@@ -74,7 +77,6 @@ public class AdicionarReceitaController {
         stage.setTitle("Adicionar Receita");
         stage.setScene(new Scene(root));
 
-        // --- ESSA LINHA É O SEGREDO ---
         // Vincula a tela atual como "dona" do modal que vai abrir
         Stage windowParent = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.initOwner(windowParent);
@@ -87,16 +89,26 @@ public class AdicionarReceitaController {
     @FXML
     public void adicionarReceita() {
 
-        Receita receita = new Receita(
-                tituloField.getText(),
-                ingredientesArea.getText(),
-                preparoArea.getText(),
-                caminhoFotoPerfil,
-                caminhoCapa,
-                tipoComboBox.getValue()
-        );
+        try {
 
-        receitaService.adicionarReceita(receita);
+            Receita receita = new Receita(
+                    tituloField.getText(),
+                    ingredientesArea.getText(),
+                    preparoArea.getText(),
+                    caminhoFotoPerfil,
+                    caminhoCapa,
+                    tipoComboBox.getValue()
+            );
+
+            receitaService.adicionarReceita(receita);
+
+            System.out.println("Receita cadastrada com sucesso.");
+
+        } catch (IllegalArgumentException e) {
+
+            System.out.println(e.getMessage());
+
+        }
+
     }
-}
 }

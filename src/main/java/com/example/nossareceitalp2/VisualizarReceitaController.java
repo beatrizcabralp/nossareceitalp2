@@ -12,6 +12,7 @@ import java.io.IOException;
 //Back-end
 
 import com.example.nossareceitalp2.model.Receita;
+
 import com.example.nossareceitalp2.service.ReceitaService;
 
 public class VisualizarReceitaController {
@@ -59,4 +60,11 @@ public class VisualizarReceitaController {
     public Receita getReceitaAtual() {
         return receitaAtual;
     }
+
+    public void carregarReceita(Receita receita) {
+
+        this.receitaAtual = receita;
+
+    }
+
 }

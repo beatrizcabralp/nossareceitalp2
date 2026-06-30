@@ -1,5 +1,15 @@
 package com.example.nossareceitalp2;
 
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
+import com.example.nossareceitalp2.model.Receita;
+import com.example.nossareceitalp2.model.TipoComida;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,6 +23,7 @@ import java.io.IOException;
 //Back-end
 
 import com.example.nossareceitalp2.model.Receita;
+
 import com.example.nossareceitalp2.service.ReceitaService;
 
 import java.util.List;
@@ -45,7 +56,7 @@ public class GerenciarReceitasController {
     @FXML
     private ScrollPane scrollchurrasco;
 
-    // --- NAVEGAÇÃO DA NAVBAR ---
+    // NAVEGAÇÃO DA NAVBAR
 
     @FXML
     public void voltarParaMain(ActionEvent event) throws IOException {
@@ -67,7 +78,15 @@ public class GerenciarReceitasController {
 
     @FXML
     public void initialize() {
+
         receitas = receitaService.listarReceitas();
+
+        for (Receita receita : receitas) {
+
+            adicionarCardNaCategoria(receita);
+
+        }
+
     }
 
     // --- MOVIMENTAÇÃO REAL DOS CARROSSÉIS ---
@@ -143,19 +162,129 @@ public class GerenciarReceitasController {
     }
 
     @FXML
-    private void abrirEditarReceita(ActionEvent event) throws IOException {
+    private void abrirEditarReceita(Receita receita) {
 
-        FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("EditarReceita.fxml")
-        );
+        try {
 
-        Parent root = loader.load();
+            FXMLLoader loader =
+                    new FXMLLoader(
+                            getClass().getResource("EditarReceita.fxml")
+                    );
 
-        Stage stage = new Stage();
+            Parent root = loader.load();
 
-        stage.setTitle("Editar Receita");
-        stage.setScene(new Scene(root));
+            EditarReceitaController controller =
+                    loader.getController();
 
-        stage.show();
+            controller.carregarReceita(receita);
+
+            Stage stage = new Stage();
+
+            stage.setScene(new Scene(root));
+
+            stage.show();
+
+        } catch (IOException e) {
+
+            e.printStackTrace();
+
+        }
+
     }
+
+    private VBox criarCardReceita(Receita receita) {
+
+        VBox card = new VBox();
+        card.setSpacing(5);
+        card.setAlignment(javafx.geometry.Pos.CENTER);
+
+        ImageView imagem = new ImageView();
+
+        imagem.setFitWidth(125);
+        imagem.setFitHeight(100);
+        imagem.setPreserveRatio(true);
+
+        try {
+
+            if (receita.getFotoPerfil() != null) {
+
+                imagem.setImage(
+                        new Image("file:" + receita.getFotoPerfil())
+                );
+
+            }
+
+        } catch (Exception e) {
+
+            // caso a imagem não exista,
+            // simplesmente deixa vazio
+
+        }
+
+        Button editar = new Button("🖉");
+
+        editar.setOnAction(event -> {
+
+            abrirEditarReceita(receita);
+
+        });
+
+        Label titulo = new Label(receita.getTitulo());
+
+        card.getChildren().addAll(imagem, editar, titulo);
+
+        return card;
+
+    }
+
+    private void adicionarCardNaCategoria(Receita receita) {
+
+        VBox card = criarCardReceita(receita);
+
+        switch (receita.getTipoComida()) {
+
+            case SOBREMESA:
+
+                ((HBox) scrollsobremesas.getContent())
+                        .getChildren()
+                        .add(card);
+
+                break;
+
+            case SALGADO:
+
+                ((HBox) scrollsalgado.getContent())
+                        .getChildren()
+                        .add(card);
+
+                break;
+
+            case VEGANO:
+
+                ((HBox) scrollvegan.getContent())
+                        .getChildren()
+                        .add(card);
+
+                break;
+
+            case MASSAS:
+
+                ((HBox) scrollmassa.getContent())
+                        .getChildren()
+                        .add(card);
+
+                break;
+
+            case CHURRASCO:
+
+                ((HBox) scrollchurrasco.getContent())
+                        .getChildren()
+                        .add(card);
+
+                break;
+
+        }
+
+    }
+
 }

@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import com.example.nossareceitalp2.model.Receita;
 
 public class EditarReceitaController {
     @FXML
@@ -43,4 +44,14 @@ public class EditarReceitaController {
 
         stage.show();
     }
+
+    private Receita receitaAtual;
+
+
+    public void carregarReceita(Receita receita){
+
+        this.receitaAtual = receita;
+
+    }
+
 }
